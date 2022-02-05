@@ -2,4 +2,15 @@
     <string name="app_name">gameTime</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="don_t_have_an_account">Don\'t have an account ?</string>
+    <string name="let_s_combat">Let\'s Combat!</string>
+    <string name="forgot_password">Forgot password ?</string>
+    <string name="password">Password</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="email">Email</string>
+    <string name="hi_kindly_login_to_complete_battle">Hi ! Kindly login to complete battle</string>
+    <string name="sign_in">Sign In</string>
+    <string name="hi_kindly_fill_the_form_to_proceed_combat">Hi! Kindly fill the form to proceed combat</string>
+    <string name="full_name">Full name</string>
 </resources>

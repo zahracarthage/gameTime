@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <item
+        android:id="@+id/page_stat"
+        android:enabled="true"
+        android:icon="@drawable/statistics_icon"
+        android:title="Stastics"/>
+
+    <item
+         android:id="@+id/discover_page"
+        android:enabled="true"
+        android:icon="@drawable/ic_place"
+        android:title="Discover"
+        />
+
+    <item
+        android:id="@+id/profile_page"
+        android:enabled="true"
+        android:icon="@drawable/profile"
+        android:title="Profile"
+        />
+
+    <item
+        android:id="@+id/chat_page"
+        android:enabled="true"
+        android:icon="@drawable/ic_chat"
+        android:title="Chat"
+        />
+    <item
+        android:id="@+id/agenda_page"
+        android:enabled="true"
+        android:icon="@drawable/schedule"
+        android:title="Agenda"
+        />
+
+
+
+
+</menu>
