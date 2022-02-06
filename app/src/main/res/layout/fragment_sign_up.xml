@@ -1,66 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="fill_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fillViewport="true"
     tools:context=".view.SignUpFragment">
 
 
     <LinearLayout
         android:id="@+id/Signupform"
-        app:layout_constraintStart_toStartOf="parent"
         android:layout_width="match_parent"
+        android:layout_height="400dp"
         android:layout_marginStart="40dp"
         android:orientation="vertical"
-        android:layout_height="400dp">
+        app:layout_constraintStart_toStartOf="parent">
 
-    <ImageView
-        android:id="@+id/img"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/signupimg"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/signupimg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
-    <TextView
-        android:id="@+id/text"
-        android:layout_marginTop="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Create an account"
-        android:textColor="@color/pink"
-        app:layout_constraintStart_toStartOf="parent"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        />
-          <TextView
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Create an account"
+            android:textColor="@color/pink"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
             android:id="@+id/text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/hi_kindly_fill_the_form_to_proceed_combat"
-            android:textSize="14sp"
             android:textColor="@color/black"
-              />
+            android:textSize="14sp" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:layout_marginTop="10dp"
-
             android:id="@+id/fnamefield"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
-            app:counterTextColor="@color/pink"
-            app:boxStrokeColor="@color/pink"
+            android:layout_marginTop="10dp"
+            android:hint="@string/full_name"
             android:textColorHint="@color/black"
-            app:hintTextColor="@color/black"
             app:boxBackgroundColor="@color/white"
-            android:hint="@string/full_name">
+            app:boxStrokeColor="@color/pink"
+            app:counterTextColor="@color/pink"
+            app:hintTextColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/fname"
@@ -73,17 +71,17 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/usernamefield"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
-            app:counterTextColor="@color/pink"
-            app:boxStrokeColor="@color/pink"
-            android:textColorHint="@color/black"
-            app:hintTextColor="@color/black"
-            app:boxBackgroundColor="@color/white"
             android:layout_marginTop="10dp"
+            android:hint="Username"
+            android:textColorHint="@color/black"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/pink"
+            app:counterTextColor="@color/pink"
 
-            android:hint="Username">
+            app:hintTextColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/username"
@@ -96,16 +94,16 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/numberField"
-            android:layout_marginTop="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
-            app:counterTextColor="@color/pink"
-            app:boxStrokeColor="@color/pink"
+            android:layout_marginTop="10dp"
+            android:hint="Number"
             android:textColorHint="@color/black"
-            app:hintTextColor="@color/black"
             app:boxBackgroundColor="@color/white"
-            android:hint="Number">
+            app:boxStrokeColor="@color/pink"
+            app:counterTextColor="@color/pink"
+            app:hintTextColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/number"
@@ -115,19 +113,20 @@
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/emailfield"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
-            app:counterTextColor="@color/pink"
-            app:boxStrokeColor="@color/pink"
-            android:textColorHint="@color/black"
-            app:hintTextColor="@color/black"
-            app:boxBackgroundColor="@color/white"
             android:layout_marginTop="10dp"
+            android:hint="Email"
+            android:textColorHint="@color/black"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/pink"
+            app:counterTextColor="@color/pink"
 
-            android:hint="Email">
+            app:hintTextColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/email"
@@ -140,16 +139,16 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/passwordfield"
-            android:layout_width="300dp"
-            android:layout_marginTop="10dp"
-            android:layout_height="wrap_content"
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
-            app:counterTextColor="@color/pink"
-            app:boxStrokeColor="@color/pink"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Password"
             android:textColorHint="@color/black"
-            app:hintTextColor="@color/black"
             app:boxBackgroundColor="@color/white"
-            android:hint="Password">
+            app:boxStrokeColor="@color/pink"
+            app:counterTextColor="@color/pink"
+            app:hintTextColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/password"
@@ -162,16 +161,16 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/cpasswordfield"
-            android:layout_width="300dp"
-            android:layout_marginTop="10dp"
-            android:layout_height="wrap_content"
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
-            app:counterTextColor="@color/pink"
-            app:boxStrokeColor="@color/pink"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Confirm Password"
             android:textColorHint="@color/black"
-            app:hintTextColor="@color/black"
             app:boxBackgroundColor="@color/white"
-            android:hint="Confirm Password">
+            app:boxStrokeColor="@color/pink"
+            app:counterTextColor="@color/pink"
+            app:hintTextColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/cpassword"
@@ -184,46 +183,44 @@
 
         <Button
             android:id="@+id/button"
+            style="@style/Widget.Material3.Button.ElevatedButton"
             android:layout_width="224dp"
             android:layout_height="58dp"
-            android:layout_marginTop="10dp"
 
-            app:backgroundTint="@color/pink"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
             android:text="Let's Combat!"
-            style="@style/Widget.Material3.Button.ElevatedButton"
             android:textColor="@color/white"
             android:textSize="15sp"
-            android:layout_marginStart="50dp"
-            />
+            app:backgroundTint="@color/pink" />
 
         <TextView
             android:id="@+id/text2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Already have an Account ?"
-            android:textColor="@color/black"
-            android:textSize="12sp"
+            android:layout_gravity="center"
             android:layout_marginStart="-30dp"
             android:layout_marginTop="40dp"
-            android:layout_gravity="center"
-            android:gravity="center"         />
+            android:gravity="center"
+            android:text="Already have an Account ?"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
 
         <TextView
             android:id="@+id/SigninBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/sign_in"
-            android:clickable="true"
-            android:layout_marginBottom="20dp"
-            android:textColor="@color/pink"
             android:layout_gravity="center"
             android:layout_marginStart="-30dp"
+            android:layout_marginBottom="20dp"
+            android:clickable="true"
+            android:text="@string/sign_in"
+            android:textColor="@color/pink"
             android:textSize="12sp"
 
             />
 
     </LinearLayout>
-
 
 
 </ScrollView>

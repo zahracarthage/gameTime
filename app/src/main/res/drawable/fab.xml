@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+        <gradient
+            android:startColor="#FF627F"
+            android:type="linear"
+            android:endColor="#F22E63"
+            android:angle="45"/>
+        </shape>
+    </item>
+
+    <item android:gravity="center"
+        >
+        <bitmap android:src="@drawable/schedule"
+            android:gravity="fill_horizontal" />
+
+    </item>
+
+</layer-list>
