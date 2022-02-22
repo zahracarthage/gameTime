@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginStart="50dp"
+    android:layout_marginTop="50dp"
+    android:layout_gravity="center_vertical"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/image"/>
+    <TextView
+        android:id="@+id/playername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="playerName"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/pink"
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Online"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#36C703"
+        android:layout_below="@id/playername"
+        android:textSize="10sp"/>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
